@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+
+# -*- coding: utf-8 -*-
+print("ok")
+import re
+import sys
+from ..src import main
+
+if __name__ == "__main__":
+    dir_name    = input("Intended use")
+
+    start_year  = input("Start year >>")
+    start_month = input("Start month >>")
+    start_day   = input("Start day >>")
+
+    end_year    = input("end year >>")
+    end_month   = input("end month >>")
+    end_day     = input("end day >>")
+
+    start_date = datetime(start_year, start_month, start_day)
+    end_date   = datetime(end_year, end_month, end_day)
+    main.main(dir_name, start_date, end_date)
